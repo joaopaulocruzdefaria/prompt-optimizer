@@ -69,7 +69,7 @@
   >
     <div
       v-if="editor"
-      class="bg-zinc-900 border-b border-zinc-800 p-2 flex flex-wrap items-center gap-1 shrink-0 "
+      class="bg-zinc-900 border-b border-zinc-800 p-2 flex flex-wrap items-center gap-1 shrink-0 h-12"
     >
       <button
         @click="editor.chain().focus().toggleBold().run()"

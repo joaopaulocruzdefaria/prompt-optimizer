@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { SearchCode, X, AlertCircle } from "lucide-vue-next";
+  import { SearchCode, X, AlertCircle } from "lucide-vue-next";
 
-defineProps<{
-  isOpen: boolean;
-}>();
+  defineProps<{
+    isOpen: boolean;
+  }>();
 
-const emit = defineEmits<{
-  (e: "close"): void;
-}>();
+  const emit = defineEmits<{
+    (e: "close"): void;
+  }>();
 </script>
 
 <template>
@@ -29,15 +29,17 @@ const emit = defineEmits<{
           class="w-full max-w-lg bg-zinc-900 border border-purple-500/30 rounded-2xl shadow-2xl shadow-purple-900/20 overflow-hidden transform transition-all relative"
           @click.stop
         >
-          <div class="px-6 py-4 bg-linear-to-r from-purple-900/30 to-fuchsia-900/10 border-b border-purple-500/20 flex items-center justify-between">
+          <div
+            class="px-6 py-4 bg-linear-to-r from-purple-900/30 to-fuchsia-900/10 border-b border-purple-500/20 flex items-center justify-between"
+          >
             <div class="flex items-center gap-3 text-purple-200">
               <div class="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
                 <SearchCode class="w-5 h-5 text-purple-300" />
               </div>
               <h3 class="text-lg font-semibold tracking-wide">Auditoria de Código</h3>
             </div>
-            
-            <button 
+
+            <button
               @click="emit('close')"
               class="text-zinc-400 hover:text-white hover:bg-white/10 p-1.5 rounded-lg transition-colors"
             >
@@ -47,14 +49,19 @@ const emit = defineEmits<{
 
           <div class="p-6 space-y-4">
             <p class="text-zinc-400 text-sm leading-relaxed">
-              Iniciando processo de auditoria. Isso irá verificar inconsistências, padrões de segurança e otimizações no código atual.
+              Iniciando processo de auditoria. Isso irá verificar inconsistências, padrões de
+              segurança e otimizações no código atual.
             </p>
-            
-            <div class="bg-black/40 rounded-xl p-4 border border-purple-500/10 flex gap-3 items-start">
+
+            <div
+              class="bg-black/40 rounded-xl p-4 border border-purple-500/10 flex gap-3 items-start"
+            >
               <AlertCircle class="w-5 h-5 text-purple-400 shrink-0 mt-0.5" />
               <div class="space-y-1">
                 <span class="text-sm font-medium text-purple-200">Pronto para auditar</span>
-                <p class="text-xs text-zinc-500">Nenhum problema crítico detectado na pré-análise.</p>
+                <p class="text-xs text-zinc-500">
+                  Nenhum problema crítico detectado na pré-análise.
+                </p>
               </div>
             </div>
           </div>

@@ -31,7 +31,7 @@
       <AuditModal :is-open="showAudit" @close="showAudit = false" />
       <AnalyzeModal :is-open="showAnalyze" @close="showAnalyze = false" />
     </div>
-    
+
     <Logo />
     <DualEditorView
       :initial-content="promptContent"

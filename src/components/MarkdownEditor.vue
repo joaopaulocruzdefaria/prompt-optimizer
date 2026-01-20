@@ -38,7 +38,7 @@
     class="bg-zinc-900 h-[75vh] w-full rounded-xl shadow-2xl shadow-black/50 border border-zinc-800 overflow-hidden flex flex-col relative group transition-colors duration-300 hover:border-zinc-700"
   >
     <div
-      class="bg-zinc-800/50 border-b border-zinc-800 px-4 py-2 shrink-0 flex items-center justify-between backdrop-blur-sm"
+      class="bg-zinc-800/50 border-b border-zinc-800 px-4 py-2 shrink-0 flex items-center justify-between backdrop-blur-sm h-12"
     >
       <div class="flex items-center gap-2">
         <div class="w-3 h-3 rounded-full bg-red-500/20 border border-red-500/50"></div>
@@ -73,7 +73,7 @@
   .custom-scrollbar::-webkit-scrollbar-thumb {
     background: #3f3f46;
     border-radius: 5px;
-    border: 2px solid #18181b; 
+    border: 2px solid #18181b;
   }
   .custom-scrollbar::-webkit-scrollbar-thumb:hover {
     background: #52525b;
