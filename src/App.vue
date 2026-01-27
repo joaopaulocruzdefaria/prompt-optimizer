@@ -42,12 +42,7 @@
 <template>
   <div id="App" class="bg-black min-h-screen">
     <div class="p-4 flex gap-2">
-      <AuditButton @audit="showAudit = true" />
-
       <AnalyzeButton @click="showAnalyze = true" />
-
-      <AuditModal :is-open="showAudit" @close="showAudit = false" />
-
       <AnalyzeModal
         :isOpen="showAnalyze"
         :promptContent="currentPrompt"
